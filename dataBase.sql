@@ -16,3 +16,21 @@ CREATE TABLE ``
 
      PRIMARY KEY (`id`) 
   );  
+
+
+CREATE DATABASE `foundation` DEFAULT CHARACTER SET utf8 COLLATE 
+utf8_turkish_ci; 
+
+USE `donations`; 
+
+CREATE TABLE `` 
+  ( 
+     `donor_id`           INT(11) NOT NULL auto_increment, 
+    `zakat` VARCHAR(255) NOT NULL,
+    `sadaqa` VARCHAR(255) NOT NULL,
+    `relief`           VARCHAR(255) NOT NULL,
+    `orphan` varchar(255) NOT NULL,
+    `amount`       VARCHAR(255) NOT NULL, 
+
+     PRIMARY KEY (`id`) 
+  );  
