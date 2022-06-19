@@ -1,5 +1,19 @@
 # nepalzakatfoundation
 
+This is my new web project  which is related to Zakat (Charity)donation system where there are some function i mentioned below:</br>
+-main
+
+
+
+![main page](https://user-images.githubusercontent.com/76876116/174499312-c747e7ad-8332-4ea4-8acf-bb004c607e10.jpg)
+
+
+
+
+
+
+
+
 <h3 align="center">A passionate frontend developer from Nepal</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ahmadfarhan203&label=Profile%20views&color=0e75b6&style=flat" alt="ahmadfarhan203" /> </p>
