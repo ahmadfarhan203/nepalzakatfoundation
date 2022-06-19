@@ -10,8 +10,8 @@ $phone= $_POST['phone'];
 $email= $_POST['email'];
 $pass= $_POST['pass'];
 $confirmpass= $_POST['confirmpass'];
-   $pass = hash('sha256', $password); 
-   $confirmpass = hash('sha256', $password); 
+   $pass = hash('sha256', $pass); 
+   $confirmpass = hash('sha256', $confirmpass); 
 if($pass==$confirmpass){
 $c="INSERT INTO signin". 
 "(username,name,adress,phone,email,password,password2)" . 
