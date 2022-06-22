@@ -8,88 +8,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="main.php">Nepal Zakat Foundation</a>
-<button class="navbar-toggler" type="button" data-toggle= "collapse" data-target="#navbarSupportedContent" 
-aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Togglenavigation">
-<span class="navbar-toggler-icon"></span>
-</button>
 
-<div class="collapse navbar-collapse" id="navbarsupportedcontent">
-<ul class="navbar-nav ml-auto">
-<li class="nav-item active">
-<a class="nav-link" href="index.php">Home <span class="sr-only">
-(Current)</span>
-</a>
-</li>
+<?php
+include 'colls.php';
+?>
 
-<li class="nav-item">
-<a class="nav-link" href="about.php">About</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Contact</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="login.php">Login</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="registrationform.php">Sign Up</a>
-</li>
-</ul>
-<form class="form-inline my-2 my-lg-0">
-<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-</form>
-</div>
-</nav>
-
-
-
-
-<style>
-
-.carousel-inner img { 
-    width:1550px; height:680px; }
-    
- </style>
-<div id="demo" class="carousel slide" data-ride="carousel">
-	<ul class="carousel-indicators">
-		<li data-target="#demo" data-slide-to="0" class="active"></li>
-		<li data-target="#demo" data-slide-to="1"></li>
-		<li data-target="#demo" data-slide-to="2"></li>
-	</ul>
-    <div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="img\zakat1.png" alt="zakat" width="1100" height="600">
-			<div class="carousel-caption">
-				<h3>Zakat</h3>
-					<p>“And establish prayer and give zakat, and whatever good you put forward for yourselves  you will find it with Allah.” (2:110, Qur'an)</p>
-			</div>
-		</div>
-	    <div class="carousel-item">
-			<img src="img\zakat4.png" alt="zakat" width="1100" height="600">
-			 <div class="carousel-caption">
-				<h3> Emergency Releif</h3>
-					<p>In the Quran, Allah (swt) says: “Help one another in acts of piety and righteousness. 
-						And do not assist each other in acts of sinfulness and transgression. And be aware of Allah. 
-						Verily, Allah is severe in punishment” (Quran 5:2).</p>
-			</div>
-	    </div>
-		<div class="carousel-item">
-			<img src="img\zakat3.png" alt="zakat" width="1100" height="600">
-			<div class="carousel-caption">
-				<h3>Sadaqah Jariya</h3>
-					<p>The Qur'an reminds us that there is a “recognised right, for the needy and deprived” over our wealth (70:24-5)</p>
-			</div>
-		</div>
-    </div>
-		<a class="carousel-control-prev" href="#demo" data-slide="prev">
-			<span class="carousel-control-prev-icon"></span>
-		</a>
-		<a class="carousel-control-next" href="#demo" data-slide="next">
-			<span class="carousel-control-next-icon"></span>
-		</a>
-</div>
+<?php
+include 'ol.php';
+?>
 
 
 
@@ -221,7 +147,7 @@ nation.
 </section>
 
 <?php
-include'footer.php';
+include 'footer.php';
 ?>
 
 
