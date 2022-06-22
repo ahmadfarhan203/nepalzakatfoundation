@@ -3,7 +3,7 @@
 <body>
 <?php
 include("config.php");
-$l = "DELETE FROM donations WHERE donor_id=".$_GET['id'];
+$l = "DELETE FROM donations WHERE donorID=".$_GET['id'];
 $do = mysqli_query($con,$l);
        
 if(!$do )
@@ -12,7 +12,7 @@ if(!$do )
 }
 else
 {
-    echo "Kayıt Silindi!</br>";
+    echo "Form Deleted!</br>";
     echo " <a href='deleteform.php'> Listele</a>\n";
 }
 mysqli_close($con);
