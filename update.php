@@ -1,27 +1,21 @@
 <?php
-//mysql con kodunu ekliyoruz
+
 include("config.php");
 
-//sorguyu hazirliyoruz
-$l = "SELECT * FROM donations WHERE donor_id =".$_GET['id'];
 
-//sorguyu veritabanina gönderiyoruz.
+$l = "SELECT * FROM donations WHERE donorID =".$_GET['donorID'];
 $cevap = mysqli_query($con,$l);
-
-//eger cevap FALSE ise hata yazdiriyoruz.      
+    
 if(!$cevap ){
     echo '<br>Hata:' . mysqli_error($con);
 }
-
-
-//veritabanından gelen cevabı alıyoruz.
 $gelen=mysqli_fetch_array($cevap);
 ?>
 <html>
 <body>
 <div class="container">
     <div class="row">
-        <form  action="update.php?id=<?php echo $_GET['id'] ?>" method="post">
+        <form  action="update.php?id=<?php echo $_GET['domorID'] ?>" method="post">
         <h2>Step 1: Choose the type of Donation</h2>
         <div class="form-group">
             <label for="sel1">ZAKAT:</label>
@@ -94,7 +88,7 @@ $gelen=mysqli_fetch_array($cevap);
     <div class="form-group">
       <div class="radio">
         <label class="control-label">
-          <input type="radio" id="amount_100" name="amount" value="500">>
+          <input type="radio" id="amount_100" name="amount" value="500">
           $500
         </label>
       </div>
@@ -102,7 +96,7 @@ $gelen=mysqli_fetch_array($cevap);
     <div class="form-group">
       <div class="radio">
         <label class="control-label">
-          <input type="radio" id="amount_100" name="amount"value="1000">>
+          <input type="radio" id="amount_100" name="amount"value="1000">
           $1000
         </label>
       </div>
@@ -120,6 +114,5 @@ $gelen=mysqli_fetch_array($cevap);
 </div>
 </div>
 
-</form>
 </body>
 </html>
