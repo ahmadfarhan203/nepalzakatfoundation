@@ -2,27 +2,24 @@
 <head><meta charset="utf-8"></head>
 <body>
 <?php
-session_start();
-include("config.php");
-$username= $_POST['username'];
-$name= $_POST['name'];
-$adress= $_POST['adress'];
-$phone= $_POST['phone'];
-$email= $_POST['email'];
-$pass= $_POST['pass'];
-$confirmpass= $_POST['confirmpass'];
-
-$s = "SELECT * FROM `signin` WHERE";
-$s= $sql . "username='username' and password='$password'";
+include 'config.php';
+$username= $_POST['user'];
+$pass= $_POST['password'];
+$pass2 = hash('sha256', $pass); 
+$s = "SELECT * FROM signin WHERE username='$username' && password='$pass2'";
 
 
-$sonuc=mysqli_query($con,$s);
+
+$answer=mysqli_query($con,$s);
+
 if(!$answer){
     echo '<br>Error:' . mysqli_error($con);
 }
 
-$num=mysqli_num_rows($sonuc);
-if($num==0){
+else{
+    $row = mysqli_fetch_array($answer, MYSQLI_ASSOC);  
+    $num=mysqli_num_rows($answer);
+if($num==1){
     
         $_SESSION['username']=$username;
         header('location:donationform.php');
@@ -30,6 +27,7 @@ if($num==0){
 else{
     echo'<script type ="text/javascript">alert ("Username or password is wrong")</script>';
     header('location:login.php');   
+}
 }
 ?>
 </body>
