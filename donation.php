@@ -1,33 +1,40 @@
+
 <html>
 <head>
     <meta charset="utf-8">
 </head>
 <body>
 <?php
-include("config.php");
-$email=$_POST['email'];
-$zakat=$_POST['zakat'];
-$sadaqah=$_POST['sadaqah'];
-$relief=$_POST['releif'];
-$orphan=$_POST['orphan'];
-$amount=$_POST['amount'];
 
-$d="INSERT INTO donations". 
-"(email,zakat,sadaqah,releif,orphan,amount)" . 
- "VALUES('$email','$zakat','$sadaqah','$relief','$orphan','$amount')";
+if(isset($_POST['insert'])){
+    include "config.php";
+if(!$con){
+    echo"connection failed";
+}  
+else{
+    $email=$_POST['email'];
+    $zakat=$_POST['zakat'];
+    $sadaqah=$_POST['sadaqah'];
+    $relief=$_POST['releif'];
+    $orphan=$_POST['orphan'];
+    $amount=$_POST['amount'];
+
+    $d = "INSERT INTO donations (email,zakat,sadaqah,releif,orphan,amount)
+          VALUES('{$email}','{$zakat}','{$sadaqah}','{$relief}','{$orphan}','{$amount}')";
 	   
-echo "<br/>";
-$x=mysqli_query($con,$d);     
-if(!$x)
-{
-    echo '<br>Error:' . mysqli_error($con);
+
+if(mysqli_query($con,$d)){
+        echo'<script type ="text/javascript">alert ("Donation Completed")</script>';
+        include "thankyou.php";
 }
-else
-{
- echo '';
+else{
+    echo"query failed";
 }
-header("location:thankyou.php");
+
+}
 mysqli_close($con);
+}
+
 ?>
 </body>
 </html>
