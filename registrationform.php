@@ -37,10 +37,6 @@
                     <a class="nav-link" href="registrationform.php">Sign Up</a>
                 </li>
             </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
         </div>
      </div>
 </nav>
@@ -54,15 +50,15 @@
     <div class="container">
         <h1>Sign Up</h1>
         <div class="row">
-           <form  action="register.php" method="post">
+           <form  action="register.php" method="POST">
                     <div class="form-group">
                         <label>Username</label>
                         <input type="text" name="username" class="form-control">
                     </div>
-                         <div class="form-group">
+                    <div class="form-group">
                          <label>Name Surname</label>
                         <input type="text" name="name" class="form-control">
-                         </div>
+                     </div>
                          <div class="form-group">
                          <label>Address</label>
                         <input type="text" name="adress" class="form-control">
@@ -84,7 +80,7 @@
                         <input type="Password" name="confirmpass" class="form-control">
                       </div>
                       
-                      <button type="submit" name="submit" class="btn btn-primary">Register</button>
+                      <button type="submit" name="submit" value="submit" class="btn btn-primary">Register</button>
                       <a href="login.php" class="btn btn-primary" role="button">Login</a>
             </form>
         </div>
