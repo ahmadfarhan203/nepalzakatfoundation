@@ -32,10 +32,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="login.php">Login</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="registrationform.php">Sign Up</a>
                 </li>
             </ul>
@@ -55,7 +55,7 @@
         <h1>Login</h1>
         <div class="row">
             <div class ="col-lg-6">
-                <form action="validation.php" method="post">
+                <form action="validation.php" method="POST">
                     <div class="form-group">
                         <label>Username</label>
                         <input type="text" name="user" class="form-control">
