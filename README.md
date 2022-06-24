@@ -27,6 +27,10 @@ This is my new web project  which is related to Zakat (Charity)donation system w
 
 ![donation](https://user-images.githubusercontent.com/76876116/174499874-d2e341ed-69be-47e0-9b4d-0c2b096c7db9.jpg)
 Form
+Thank you page
+
+![1](https://user-images.githubusercontent.com/76876116/175607818-6afab393-6c3a-4960-aedc-32e97ec9e679.jpg)
+
 
 -list of Donation
 
@@ -38,6 +42,13 @@ Form
 
 
 ![delete](https://user-images.githubusercontent.com/76876116/174499902-311fa7ee-63b2-4464-bdbe-c7c760edc805.jpg)
+
+
+
+Updating the donation list
+
+![2](https://user-images.githubusercontent.com/76876116/175607649-000b88d1-0398-43c9-893a-72f6fdc0a07f.jpg)
+
 
 While doing this project i used some language and tools like:
 -PhP
