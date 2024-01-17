@@ -32,22 +32,7 @@ Thank you page
 ![1](https://user-images.githubusercontent.com/76876116/175607818-6afab393-6c3a-4960-aedc-32e97ec9e679.jpg)
 
 
--list of Donation
 
-![list](https://user-images.githubusercontent.com/76876116/174499884-12630b7b-4f54-4c8b-8e87-c46d8635c958.jpg)
-
-
-
--Deleting the donation List
-
-
-![delete](https://user-images.githubusercontent.com/76876116/174499902-311fa7ee-63b2-4464-bdbe-c7c760edc805.jpg)
-
-
-
-Updating the donation list
-
-![2](https://user-images.githubusercontent.com/76876116/175607649-000b88d1-0398-43c9-893a-72f6fdc0a07f.jpg)
 
 
 While doing this project i used some language and tools like:
